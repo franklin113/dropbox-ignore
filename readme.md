@@ -35,6 +35,8 @@ The keys within this are what generates the dropdown menu found in windows.
       ``` 
       PowerShell.exe -File "C:\automations\dropbox-ignore\unignore-directory.ps1" "%V"
       ```
-
+4) (optional) Add Icons
+    - Create a new string value inside both parent keys named "Icon".
+    - Set the value to "C:\Program Files (x86)\Dropbox\Client\Dropbox.exe" ( or the path to your dropbox exe ) 
 ### Run the script
 Right click on a test folder that is currently synced to dropbox. You should see a green checkbox on the bottom left of the folder icon.  Click the "Dropbox Ignore Folder" item. A powershell prompt should popup briefly and close, showing that it's running. After a moment, the green sync icon should be replaced by a gray minus sign icon.
